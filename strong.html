@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function strong()
+        {
+            let num=Number(prompt('Enter a number:'));//145
+            let n=num;
+            let dsum=0;
+            while(num!=0)
+            {
+                let ld=num%10;
+                let fact=1;
+                for(let i=ld;i>0;i--)
+                {
+                    fact=fact*i;
+                }
+                dsum+=fact;
+                num=Math.floor(num/10)
+
+
+            }
+            console.log((n===dsum)?`${n} is a strong number`:'ns')
+        }
+        strong();
+    </script>
+</body>
+</html>

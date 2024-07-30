@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function main()
+        {
+            let num=121;
+            let n=num;
+            let rev=0;
+            while(num!=0)
+            {
+                let ld=num % 10;
+                rev=rev*10 + ld;
+                num=Math.floor(num / 10);
+            }
+            if(rev===n)
+            {
+                console.log(`${n} is a pallindrome number`);
+            }
+            else
+            {
+                console.log(`${n} is not a pallindrome number`);
+            }
+        }
+        main();
+    </script>
+    <h1>Pallindrome Number Program</h1>
+</body>
+</html>

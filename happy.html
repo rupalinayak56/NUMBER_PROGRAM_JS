@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        happy();
+        function happy()
+        {
+          let n=44;
+          while(n>9)
+          {
+            let dsum=0;
+            while(n!=0)
+            {
+                let ld=n%10;
+                dsum+=ld**2;
+                n=Math.floor(n/10)
+            }
+            n=dsum;
+          }
+          console.log((n===1 || n===7)?'hn':'nhn') ; 
+        }
+   </script>
+</body>
+</html>

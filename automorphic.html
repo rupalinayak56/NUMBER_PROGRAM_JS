@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function automorphic()
+        {
+            let n=25;
+            let sq=n**2;
+            let count=String(n).length;
+            let ld=sq%(10**count);
+            console.log((ld===n)?'an':'nan')
+        }
+        automorphic();
+    </script>
+</body>
+</html>

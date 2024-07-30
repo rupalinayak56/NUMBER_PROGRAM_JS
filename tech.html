@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tech()
+        {
+            let n=2025;
+            let count=String(n).length;
+            let fn=Math.floor(n/(10**(count/2)));
+            //console.log(fn)
+            let ln=Math.floor(n%(10**(count/2)));
+            let num=(fn+ln)**2;
+            console.log(num)
+            console.log((count%2==0 && n===num )?'tn':'ntn')
+        }
+        tech();
+    </script>
+</body>
+</html>

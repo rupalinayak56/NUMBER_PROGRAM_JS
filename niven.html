@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function niven()
+        {
+            let num=14//12;
+            let n=num;
+            let dsum=0;
+            while(num!=0)
+            {
+                let ld=num%10;
+                dsum=dsum+ld;
+                num=Math.trunc(num/10);
+            }
+            if(n%dsum==0)
+            {
+                console.log('niven');
+            }
+            else
+            {
+                console.log('not niven');
+            }
+        }
+        niven();
+    </script>
+</body>
+</html>

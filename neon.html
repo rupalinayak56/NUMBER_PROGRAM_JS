@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function neon()
+        {
+            let n=9;
+            let sq=n**2;
+            let dsum=0;
+            while(sq!=0)
+            {
+                let ld=sq%10;
+                dsum+=ld;
+                sq=Math.floor(sq/10);
+            }
+            console.log((n===dsum)?'nn':'nnn');
+        }
+        neon();
+    </script>
+</body>
+</html>
